@@ -11,7 +11,6 @@ st.title("Relatórios")
 st.sidebar.title("Filtros")
 
 month = st.sidebar.selectbox("Mês", df["Month"].unique())
-# TODO start this multiselect with all options selected
 city = st.sidebar.multiselect("City", df["City"].unique(), df["City"].unique())
 payment = st.sidebar.multiselect("Payment", df["Payment"].unique(), df["Payment"].unique())
 gender = st.sidebar.multiselect("Gender", df["Gender"].unique(), df["Gender"].unique())
